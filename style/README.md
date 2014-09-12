@@ -109,6 +109,12 @@ abstract class Some_Example {
 	}
 }
 ```
+
+## Ruby
+Method calls:
+- Omit parentheses for method calls with no arguments.
+- Omit parentheses around parameters for methods that are part of an internal DSL (e.g. Rake, Rails, RSpec), methods that have "keyword" status in Ruby (e.g. `attr_reader`, `puts`) and attribute access methods. Use parentheses around the arguments of all other method invocations.
+
 ## HTML / CSS / JS
 ### Coding Standards
 * HTML/CSS: <a href="http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml">Use Google Code Style Guide</a>
