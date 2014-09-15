@@ -111,7 +111,7 @@ abstract class Some_Example {
 ```
 
 ## Ruby
-Method calls:
+In most cases use parentheses around the arguments of method invocations, but:
 - Omit parentheses for method calls with no arguments.
 - Omit parentheses around parameters for methods that are part of an internal DSL (e.g. Rake, Rails, RSpec), methods that have "keyword" status in Ruby (e.g. `attr_reader`, `puts`) and attribute access methods. Use parentheses around the arguments of all other method invocations.
 
