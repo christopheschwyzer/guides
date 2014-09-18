@@ -63,29 +63,36 @@ git push origin --delete <branchName>
 
 OpenSSL
 -------
+If you omit `-out` output defaults to STDOUT
+
 **Convert PFX to key+pem**
 
 ```
-openssl pkcs12 -in input.pfx -nocerts -nodes -out output.key
-openssl pkcs12 -in input.pfx -clcerts -nokeys -out output.pem
+openssl pkcs12 -in <PFX file> -nocerts -nodes -out <KEY File>
+openssl pkcs12 -in <PFX File> -clcerts -nokeys -out <PEM File>
 ```
 
 **Create key+csr**
 
 ```
-openssl req -new -newkey rsa:2048 -nodes -keyout *.cargomedia.ch.key -out *.cargomedia.ch.csr -subj '/CN=*.cargomedia.ch/C=CH'
+openssl req -new -newkey rsa:2048 -nodes -keyout <KEY File> -out <CSR File> -subj '/CN=<DOMAIN | WILDCARD>/C=<COUNTRY>'
 ```
 
-**Create key+pem**
+**Create key+pem with sha-256 signature (aka self-signed certificate)**
+`sha-1` signed certificates are being [gradually phased out in a near future](http://www.entrust.com/sha-1-deprecation-on-to-sha-2/)
 ```
-openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout *.cargomedia.ch.key -out *.cargomedia.ch.pem -subj '/CN=*.cargomedia.ch'
+openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY File> -out <PEM File> '/CN=<DOMAIN | WILDCARD>/C=<COUNTRY>'
 ```
 
 **Output hash of certificate (used by apache for chain following)**
 ```
-openssl x509 -noout -hash -in input.pem
+openssl x509 -noout -hash -in <PEM File>
 ```
 
+**Create new csr based on existing certificate**
+```
+openssl x509 -x509toreq -in <PEM File> -signkey <KEY file> -out <CSR file>
+```
 
 ffmpeg
 ------
