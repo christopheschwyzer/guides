@@ -78,18 +78,20 @@ openssl pkcs12 -in <PFX File> -clcerts -nokeys -out <PEM File>
 openssl req -new -newkey rsa:2048 -nodes -keyout <KEY File> -out <CSR File> -subj '/CN=<DOMAIN | WILDCARD>/C=<COUNTRY>'
 ```
 
-**Create key+pem with sha-256 signature (aka self-signed certificate)**
-`sha-1` signed certificates are being [gradually phased out in a near future](http://www.entrust.com/sha-1-deprecation-on-to-sha-2/)
+**Create key+pem with sha-256 signature** (aka self-signed certificate)
+
 ```
 openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY File> -out <PEM File> '/CN=<DOMAIN | WILDCARD>/C=<COUNTRY>'
 ```
 
 **Output hash of certificate (used by apache for chain following)**
+
 ```
 openssl x509 -noout -hash -in <PEM File>
 ```
 
 **Create new csr based on existing certificate**
+
 ```
 openssl x509 -x509toreq -in <PEM File> -signkey <KEY file> -out <CSR file>
 ```
@@ -97,6 +99,7 @@ openssl x509 -x509toreq -in <PEM File> -signkey <KEY file> -out <CSR file>
 ffmpeg
 ------
 **Convert `MTS` to `mp4`**
+
 ```
 cp /Volumes/NO\ NAME/PRIVATE/AVCHD/BDMV/STREAM/* .
 rm -rf /Volumes/NO\ NAME/PRIVATE/AVCHD
@@ -107,6 +110,7 @@ rdiff-backup
 ------------
 **Restoring database backup**
 This script gives only the big picture, it's not suitable to be run without modifying it.
+
 ```sh
 HOST="<IP ADDRESS OF DATABASE SERVER>"
 
