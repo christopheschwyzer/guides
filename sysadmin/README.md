@@ -14,3 +14,9 @@ Working on production servers
 - Manual work on production servers should be avoided if possible. Work on staging environment, or a local VM instead.
 - Before running commands which will alter configuration, please let someone review the exact commands you're going to execute.
 - Announce work on production servers in the HipChat channel `Sysadmin`.
+
+PagerDuty
+---------
+*On duty* person should:
+- Have a smartphone on them, and respond to alerts within 10 minutes.
+- Be able to access their PC in case of emergencies within 1 hour.
