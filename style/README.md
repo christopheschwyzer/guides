@@ -217,7 +217,7 @@ $language->setTranslation('.language.key', 'Transalation with {$variable}');
 ### Delete Translation
 ```php
 <?php
-CM_Model_Language::deleteKey('Some cool phrase');
-CM_Model_Language::deleteKey('Some cool phrase with {$variable}');
-CM_Model_Language::deleteKey('.language.key');
+CM_Model_LanguageKey::deleteByName('Some cool phrase');
+CM_Model_LanguageKey::deleteByName('Some cool phrase with {$variable}');
+CM_Model_LanguageKey::deleteByName('.language.key');
 ```
