@@ -146,8 +146,8 @@ Docu styles are according to http://usejsdoc.org/.
 ```js
 (function($) {
   /**
-   * @param {String} required. This is a required argument of type String.
-   * @param {Object} [optional]. This is an optional argument of type Object.
+   * @param {String} required This is a required argument of type String.
+   * @param {Object} [optional] This is an optional argument of type Object.
    */
   $.fn.toggleNext = function(required, optional) {
     this.optional = optional || {};
