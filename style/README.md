@@ -140,10 +140,17 @@ In most cases use parentheses around the arguments of method invocations, but:
 	display: none;
 }
 ```
+
 #### JS
+Docu styles are according to http://usejsdoc.org/. 
 ```js
 (function($) {
-	$.fn.toggleNext = function() {
+  /**
+   * @param {String} required. This is a required argument of type String.
+   * @param {Object} [optional]. This is an optional argument of type Object.
+   */
+  $.fn.toggleNext = function(required, optional) {
+    this.optional = optional || {};
 		return this.each(function() {
 			var $toggler = $(this);
 			var content = $toggler.next('.toggleNext-content');
