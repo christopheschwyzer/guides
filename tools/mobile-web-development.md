@@ -4,7 +4,7 @@ Tipps for developing and debugging web applications on mobile phones.
 
 Accessing Vagrant VMs from your phone
 -------------------------------------
-When using the [landrush] DNS plugin for Vagrant one can configure the PC's IP address as the DNS server of the phone.
+When using the *landrush* DNS plugin for Vagrant one can configure the PC's IP address as the DNS server of the phone.
 This way websites running in a VM on a PC can be accessed on the phone. See [proxy-mobile docu](https://github.com/phinze/landrush/tree/master/doc/proxy-mobile).
 
 Self-signed SSL certificates
