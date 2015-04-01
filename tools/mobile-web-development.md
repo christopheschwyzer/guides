@@ -9,8 +9,8 @@ This way websites running in a VM on a PC can be accessed on the phone.
 
 See [proxy-mobile docu](https://github.com/phinze/landrush/tree/master/doc/proxy-mobile) (a *bind* DNS server is installed with [osx-setup](https://github.com/cargomedia/osx-setup/blob/master/deploy/resource/osx/files/_default/usr/local/etc/named.conf)).
 
-Self-signed SSL certificates
-----------------------------
+Self-signed SSL certificates on Android
+---------------------------------------
 
 Create key+cert with v3_req extensions and enabled as a CA:
 ```sh
@@ -23,5 +23,5 @@ openssl x509 -in 'example.pem' -outform der -out 'example.der.crt'
 ```
 
 Upload the `.der.crt` file to *Google Drive* and install it on your Android Device:
-
-Go to *Settings > Security > Credential storage: Install from storage* and select the certificate.
+- Go to *Settings > Security > Credential storage: Install from storage*
+- Select the certificate from your *Google Drive*
