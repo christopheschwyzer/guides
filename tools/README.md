@@ -81,7 +81,7 @@ openssl req -new -newkey rsa:2048 -nodes -keyout <KEY File> -out <CSR File> -sub
 **Create key+pem with sha-256 signature** (aka self-signed certificate)
 
 ```
-openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY File> -out <PEM File> '/CN=<DOMAIN | WILDCARD>/C=<COUNTRY>'
+openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY File> -out <PEM File> -subj '/CN=<DOMAIN | WILDCARD>/C=<COUNTRY>'
 ```
 
 **Output hash of certificate (used by apache for chain following)**
