@@ -48,7 +48,7 @@ Set up PhpStorm and/or IntelliJ IDEA
 Set the following settings:
 - Code Style: "cargomedia"
 
-See also the [phpunit configuration](/tools#phpstorm) which should be set per project.
+See also the [phpunit configuration](/tools/phpstorm.md) which should be set per project.
 
 Add yourself as a team member
 -----------------------------
