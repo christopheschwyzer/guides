@@ -4,12 +4,13 @@ Setup
 Set up OS X
 -----------
 1. Follow the instructions in [osx-setup](https://github.com/cargomedia/osx-setup).
-2. Add your computer to the *Hardware List*
+2. Add your computer to the [Hardware List](https://github.com/cargomedia/backoffice/wiki/Hardware).
 
 Accounts
 --------
 - [Google](https://www.google.com/a/cpanel/cargomedia.ch/Organization) Email and calendar, [assign to groups](https://admin.google.com/cargomedia.ch/AdminHome?fral=1#GroupList:)
 - [Harvest](https://cargomedia.harvestapp.com/people) Time tracking, [assign to project](https://cargomedia.harvestapp.com/projects)
+- [Timetastic](https://app.timetastic.co.uk/Users) Tracking vacation and off days
 - [15Five](https://cargomedia.15five.com/) Weekly report
  - *What did you get accomplished this week?*: Note down  *accomplishments* and *time-consuming tasks* during the week.
  - Make sure task descriptions are *comprehensible* to everyone on the team.
@@ -30,6 +31,10 @@ Accounts
 
 Please enable 2-factor authentication for [Github](https://github.com/settings/two_factor_authentication/configure) and [Google](https://www.google.com/settings/security) *now*.
 
+Say *hello* to HR
+-----------------
+Please send an email to hr@cargomedia.ch and let them know you joined the company, so we can initate all the paper work.
+
 Set up git and GitHub
 ---------------------
 Configure git:
@@ -47,7 +52,7 @@ Set up PhpStorm and/or IntelliJ IDEA
 Set the following settings:
 - Code Style: "cargomedia"
 
-See also the [phpunit configuration](/tools#phpstorm) which should be set per project.
+See also the [phpunit configuration](/tools/phpstorm.md) which should be set per project.
 
 Add yourself as a team member
 -----------------------------
@@ -55,10 +60,6 @@ Open a [pull request](https://github.com/cargomedia/cargomedia.github.io) to add
 
 Pick an animal image from the [available ones](https://drive.google.com/a/cargomedia.ch/#folders/0B8-0u-pwGKs-aHdaSHBGcm4xcm8) or ask Christophe for a new one.
 
-Conferences and training
-------------------------
-If you'd like to attend a conference please talk to us so we can find a good financial solution which makes sense for everyone.
-
-We'd like to conduct *internal trainings* more often. Talk to us with ideas!
-
-Use the [blog](http://www.cargomedia.ch/blog/) to let the team know about what you're doing. You can open a [pull-request here](https://github.com/cargomedia/cargomedia.github.io).
+Work environment and workflows
+------------------------------
+Head over to our *backoffice* repo to learn the most important things about our [work environment](https://github.com/cargomedia/backoffice/tree/master/work-environment) and everyday's [workflows](https://github.com/cargomedia/backoffice/tree/master/workflows).
