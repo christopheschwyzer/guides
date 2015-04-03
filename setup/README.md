@@ -4,7 +4,7 @@ Setup
 Set up OS X
 -----------
 1. Follow the instructions in [osx-setup](https://github.com/cargomedia/osx-setup).
-2. Add your computer to the *Hardware List*
+2. Add your computer to the [Hardware List](https://github.com/cargomedia/backoffice/wiki/Hardware).
 
 Accounts
 --------
