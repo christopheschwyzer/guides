@@ -55,11 +55,3 @@ Add yourself as a team member
 Open a [pull request](https://github.com/cargomedia/cargomedia.github.io) to add yourself as a team member on [cargomedia.ch](http://www.cargomedia.ch/).
 
 Pick an animal image from the [available ones](https://drive.google.com/a/cargomedia.ch/#folders/0B8-0u-pwGKs-aHdaSHBGcm4xcm8) or ask Christophe for a new one.
-
-Conferences and training
-------------------------
-If you'd like to attend a conference please talk to us so we can find a good financial solution which makes sense for everyone.
-
-We'd like to conduct *internal trainings* more often. Talk to us with ideas!
-
-Use the [blog](http://www.cargomedia.ch/blog/) to let the team know about what you're doing. You can open a [pull-request here](https://github.com/cargomedia/cargomedia.github.io).
