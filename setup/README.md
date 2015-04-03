@@ -31,6 +31,10 @@ Accounts
 
 Please enable 2-factor authentication for [Github](https://github.com/settings/two_factor_authentication/configure) and [Google](https://www.google.com/settings/security) *now*.
 
+Say *hello* to HR
+-----------------
+Please send an email to hr@cargomedia.ch and let them know you joined the company, so we can initate all the paper work.
+
 Set up git and GitHub
 ---------------------
 Configure git:
