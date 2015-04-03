@@ -59,3 +59,7 @@ Add yourself as a team member
 Open a [pull request](https://github.com/cargomedia/cargomedia.github.io) to add yourself as a team member on [cargomedia.ch](http://www.cargomedia.ch/).
 
 Pick an animal image from the [available ones](https://drive.google.com/a/cargomedia.ch/#folders/0B8-0u-pwGKs-aHdaSHBGcm4xcm8) or ask Christophe for a new one.
+
+Work environment and workflows
+------------------------------
+Head over to our *backoffice* repo to learn the most important things about our [work environment](https://github.com/cargomedia/backoffice/tree/master/work-environment) and everyday's [workflows](https://github.com/cargomedia/backoffice/tree/master/workflows).
