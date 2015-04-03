@@ -37,6 +37,8 @@ Please send an email to hr@cargomedia.ch and let them know you joined the compan
 
 Set up git and GitHub
 ---------------------
+Learn about git if necessary ([recommended video](https://www.youtube.com/watch?v=ZDR433b0HJY)).
+
 Configure git:
 ```
 git config --global user.email 'email@cargomedia.ch'
