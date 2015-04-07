@@ -20,3 +20,7 @@ PagerDuty
 *On duty* person should:
 - Have a smartphone on them, and respond to alerts within 10 minutes.
 - Be able to access their PC in case of emergencies within 1 hour.
+
+…and is compensated for their work:
+- Receives a daily compensation.
+- Receives normal hourly rate in case of an emergency, min. 1h if during night.
