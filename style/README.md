@@ -13,21 +13,6 @@
 * **Methods** usually begin with a verb. E.g. `getSomething`, `setSomething`, `deleteSomethingElse`
 
 ## PHP
-### Template: Cache
-```php
-$cacheKey = CM_CacheConst::Some_Constant . '_foo:' . $foo . '_bar:' . $bar;
-if (false === ($result = CM_Cache::get($cacheKey))) {
-	// Assign $result somehow
-
-	CM_Cache::set($cacheKey, $result);
-}
-```
-
-### Template: Random md5 string
-32 characters hexadecimal
-```php
-md5(rand() . uniqid());
-```
 
 ### Template: Exception
 ```php
@@ -142,7 +127,7 @@ In most cases use parentheses around the arguments of method invocations, but:
 ```
 
 #### JS
-Docu styles are according to http://usejsdoc.org/. 
+Docu styles are according to http://usejsdoc.org/.
 ```js
 (function($) {
   /**
