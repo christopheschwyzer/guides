@@ -19,9 +19,7 @@
 Wrap variable output in backticks:
 ```php
 throw new CM_Exception_NotAllowed('Parameter `' . $param . '` is not allowed.');
-```
-or:
-```php
+// or:
 throw new CM_Exception_NotAllowed("Parameter `{$param}` is not allowed.");
 ```
 
