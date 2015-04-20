@@ -1,10 +1,11 @@
 # Style
 
 ## Formatting
-* Every file should end with a EOL
+* Every file should end with an EOL
 * EOL is \n
-* Use two spaces for indentation (look around you, some projects use tabs).
-* Use the IntelliJ IDEA codestyle templates!
+* Use four spaces for indentation (two for JS)
+* Prefer single over double quotes
+* Use the JetBrain IDE's codestyle templates
 
 ## Naming
 * Do not use **abbreviations** (for exceptions: capitalize them like normal words. E.g. `Css`)
@@ -13,35 +14,25 @@
 * **Methods** usually begin with a verb. E.g. `getSomething`, `setSomething`, `deleteSomethingElse`
 
 ## PHP
-### Template: Cache
-```php
-$cacheKey = CM_CacheConst::Some_Constant . '_foo:' . $foo . '_bar:' . $bar;
-if (false === ($result = CM_Cache::get($cacheKey))) {
-	// Assign $result somehow
 
-	CM_Cache::set($cacheKey, $result);
-}
-```
-
-### Template: Random md5 string
-32 characters hexadecimal
-```php
-md5(rand() . uniqid());
-```
-
-### Template: Exception
+### Exceptions
+Wrap variable output in backticks:
 ```php
 throw new CM_Exception_NotAllowed('Parameter `' . $param . '` is not allowed.');
+// or:
+throw new CM_Exception_NotAllowed("Parameter `{$param}` is not allowed.");
 ```
 
 ### Coding standards
 * Internal types: Use type-safe comparison, cast/check early.
 * Use type hinting whenever possible. Prefer objects to internal types as arguments.
-* Usage of "ternary operator" is discouraged, but allowed in simple non-nested variable assignments, like:
+* Usage of *ternary operator* is discouraged, but allowed in simple non-nested variable assignments, like:
 ```php
 $state = isset($requestBody['state']) ? (string) $requestBody['state'] : null;
 ```
-* Within classes, we define first the class constants, then the non-static class properties, the static class properties, the constructor, the abstract methods, the non-static methods and finally the static methods. Within each category, items are ordered by their visibility (starting with the highest one) and finally sorted alphabetically. The only exception to the alphabetical sorting are setters, which should be defined right after their respective getter.
+* Within classes, we define first the class constants, then the non-static class properties, the static class properties, the constructor, the abstract methods, the non-static methods and finally the static methods.
+Within each category, items are ordered by their visibility (starting with the highest one) and finally sorted alphabetically.
+The only exception to the alphabetical sorting are setters, which should be defined right after their respective getter.
 
 Some/Example.php
 ```php
@@ -142,7 +133,7 @@ In most cases use parentheses around the arguments of method invocations, but:
 ```
 
 #### JS
-Docu styles are according to http://usejsdoc.org/. 
+Docu styles are according to http://usejsdoc.org/.
 ```js
 (function($) {
   /**
