@@ -11,7 +11,7 @@ openssl pkcs12 -in <PFX file> -nocerts -nodes -out <KEY File>
 openssl pkcs12 -in <PFX File> -clcerts -nokeys -out <PEM File>
 ```
 
-**Convert PEM certificate to DER**:
+**Convert PEM certificate to DER**
 ```sh
 openssl x509 -in 'example.pem' -outform der -out 'example.der.crt'
 ```
@@ -40,4 +40,35 @@ Self-signed certificates
 **Create key+pem**
 ```sh
 openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY File> -out <PEM File> -subj '/CN=<DOMAIN>/C=<COUNTRY>'
+```
+
+**Create key+pem from config file**
+```sh
+openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY FILE> -out <PEM FILE> -config <CONFIG FILE>
+```
+
+Example config file (with CA and alternative names):
+```
+prompt = no
+
+[req]
+req_extensions = v3_req
+x509_extensions	= v3_ca
+distinguished_name = req_distinguished_name
+
+[req_distinguished_name]
+commonName = my-name
+countryName = US
+
+[v3_req]
+basicConstraints = CA:true
+subjectAltName = @alt_names
+
+[v3_ca]
+basicConstraints = CA:true
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = example.dev
+DNS.2 = something.dev
 ```
