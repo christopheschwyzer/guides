@@ -42,12 +42,12 @@ Self-signed certificates
 openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY File> -out <PEM File> -subj '/CN=<DOMAIN>/C=<COUNTRY>'
 ```
 
-**Create key+pem from config file**
+**Create key+pem with CA and alternative names**
 ```sh
 openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY FILE> -out <PEM FILE> -config <CONFIG FILE>
 ```
 
-Example config file (with CA and alternative names):
+Example config file:
 ```
 prompt = no
 
