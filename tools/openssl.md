@@ -34,6 +34,8 @@ openssl x509 -x509toreq -in <PEM File> -signkey <KEY file> -out <CSR file>
 
 Self-signed certificates
 ------------------------
+Also see the [cargomedia-ca repo](https://github.com/cargomedia/cargomedia-ca).
+
 #### Create key+pem
 ```sh
 openssl req -x509 -nodes -sha256 -days 3650 -newkey rsa:2048 -keyout <KEY File> -out <PEM File> -subj '/CN=<DOMAIN>/C=<COUNTRY>'
