@@ -78,7 +78,8 @@ Further reading: http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html
 - Add `Breaking:` as a prefix to the merge's commit message on Github when you know it’s going to break dependencies
 
 ## App Release
-- Master is always deployable
-- Changes should be deployed quickly. Some projects use [pulsar](https://github.com/cargomedia/pulsar-conf-cargomedia) for deployments.
-- Change-owners should be available during release
-- Monitor infrastructure performance, application performance and logs
+- Master is always deployable, changes should be deployed quickly.
+- Some projects use [pulsar](https://github.com/cargomedia/pulsar-conf-cargomedia) for deployments, which can be controlled via [hubot-pulsar](https://github.com/cargomedia/hubot-pulsar).
+- Change-owners should be available during the release, or somebody who can cover them.
+- Release-initiator is ultimately responsible for understanding, checking and monitoring the impact of the release.
+- After the release, please monitor infrastructure performance, application performance and logs.
