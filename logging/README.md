@@ -51,3 +51,5 @@ Log entries should include a `level`:
 - **warning**: Problems that can appear from time to time, like communication with external services. Their overall volume should be observed to detect anomalies.
 - **error**: Problems that should not usually happen. They should be investigated case-by-case.
 - **fatal**: Things that should never happen, like uncaught exceptions. These are bugs and should be fixed.
+
+Typically production deployments will log entries starting at level *info* or *warning*.
