@@ -40,5 +40,16 @@ All fields except `message` are optional. It's recommended to always provide `me
 
 Notes:
 - **timestamp**: Full ISO 8601, optionally with fractions of a second
-- **level**: "debug", "warning", "error" etc. See https://tools.ietf.org/html/rfc5424
+- **level**: "debug", "warning", "error" etc. See [below](#level).
 - **&lt;app-name&gt;**: Any extra fields specific to the application
+
+Level
+-----
+Log entries should include a `level`:
+- **debug**: Low level information about the program, that is mainly useful in a development environment.
+- **info**: Important information about the main business logic of the program.
+- **warning**: Problems that can appear from time to time, like communication with external services. Their overall volume should be observed to detect anomalies.
+- **error**: Problems that should not usually happen. They should be investigated case-by-case.
+- **fatal**: Things that should never happen, like uncaught exceptions. These are bugs and should be fixed.
+
+Typically production deployments will log entries starting at level *info* or *warning*.
