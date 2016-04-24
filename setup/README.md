@@ -41,13 +41,18 @@ Learn about git if necessary ([recommended video](https://www.youtube.com/watch?
 
 Configure git:
 ```
-git config --global user.email 'email@cargomedia.ch'
-git config --global user.name 'First Last'
+git config --global user.email '<email-address>'
+git config --global user.name '<full-name>'
 ```
 
-Add your [SSH-key for your GitHub-account](https://github.com/settings/ssh).
+Add your [SSH-key to your GitHub-account](https://github.com/settings/keys).
 
 Make yourself acquainted with our [recommended git workflows](/workflow).
+
+Optionally configure your [GPG signing key](https://help.github.com/articles/generating-a-gpg-key/):
+```
+git config --global user.signingkey '<gpg-key>'
+```
 
 Set up PhpStorm and/or IntelliJ IDEA
 ------------------------------------
