@@ -108,7 +108,6 @@ In most cases use parentheses around the arguments of method invocations, but:
 
 ## HTML / CSS / JS
 ### Coding Standards
-* HTML/CSS: <a href="http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml">Use Google Code Style Guide</a>
 * Use CamelCase
 * Use "-" for related child selectors (e.g. "clipSlide" & "clipSlide-handle")
 * Use exclusive CSS class for JS bindings
