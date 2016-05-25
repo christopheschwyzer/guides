@@ -110,8 +110,8 @@ In most cases use parentheses around the arguments of method invocations, but:
 ### Coding Standards
 * Use CamelCase
 * Use "-" for related child selectors (e.g. "clipSlide" & "clipSlide-handle")
-* Use "data" attribute for dynamic states,modes, etc. (e.g. "[data-mode=default]")
-* use "--" to specify the corresponding state's content(e.g. "mode--default")
+* Use "data" attribute for dynamic states, modes, etc. (e.g. "[data-mode=default]")
+* use "--" to specify the corresponding state's content (e.g. "mode--default")
 * Use exclusive CSS class for JS bindings
 
 ### Example (toggleNext jQuery Plugin)
