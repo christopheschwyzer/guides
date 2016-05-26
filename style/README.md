@@ -108,9 +108,10 @@ In most cases use parentheses around the arguments of method invocations, but:
 
 ## HTML / CSS / JS
 ### Coding Standards
-* HTML/CSS: <a href="http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml">Use Google Code Style Guide</a>
 * Use CamelCase
 * Use "-" for related child selectors (e.g. "clipSlide" & "clipSlide-handle")
+* Use "data" attribute for dynamic states, modes, etc. (e.g. "[data-mode=default]")
+* use "--" to specify the corresponding state's content (e.g. "mode--default")
 * Use exclusive CSS class for JS bindings
 
 ### Example (toggleNext jQuery Plugin)
