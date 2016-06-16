@@ -1,13 +1,18 @@
 PhpStorm
 ========
-Version 8 required.
+Version 2016.1.2 required.
 
-**Vagrant PhpStorm Tunnel**
+Vagrant PHP interpreter
+-----------------------
+Go to `Preferences > Languages & Frameworks > PHP` and click the `…` to add a new interpreter. Click the `+`, chose `Remote…`, select `Vagrant` and confirm with `OK`.
+Check the `Visible only for this project` option and close with `OK`.
 
-To run scripts using PHP (installed in the Vagrant virtual machine) via ssh, install
-[vagrant-phpstorm-tunnel](https://github.com/cargomedia/vagrant-phpstorm-tunnel) and follow the instructions to set it up.
+![PhpStorm screenshot](img/phpstorm-php.png)
 
-**PHPUnit Test Configuration**
 
-Go to `Preferences > PHP > PHPUnit` and under `PHPUnit library` specify composer's `autoload.php` as custom loader. Under `Test runner` check the checkbox next to `Default configuration file` and select the `phpunit.xml` inside the root folder of the project you're setting up.
-![PhpStorm screenshot](img/phpstorm-phpunit-configuration.png)
+PHPUnit Test Configuration
+--------------------------
+Go to `Preferences > Languages & Frameworks > PHP > PHPUnit`, click the `+` and chose `By Remote interpreter`. Select the previously created *remote interpreter* and confirm with `OK`.
+Configure as follows:
+
+![PhpStorm screenshot](img/phpstorm-phpunit.png)
