@@ -15,7 +15,11 @@ To get the most value out of a centralized logging system it's important to use 
   "exception": {
     "type": "ValueError",
     "message": "Value is wrong",
-    "stack": "<stack-trace>"
+    "stack": "<stack-trace>",
+    "metaInfo": {
+      "<meta1>": "foo",
+      "<meta2>": "bar"
+    }
   },
   "httpRequest": {
     "uri": "https://www.example.com/checkout?bundle=136",
@@ -30,8 +34,8 @@ To get the most value out of a centralized logging system it's important to use 
   "<app-name>": {
     "user": "<userId>",
     "client": "<requestClientId>",
-    "extra1": "foo",
-    "extra2": "bar"
+    "<extra1>": "foo",
+    "<extra2>": "bar"
   }
 }
 ```
