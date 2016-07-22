@@ -24,6 +24,10 @@ To get the most value out of a centralized logging system it's important to use 
   "httpRequest": {
     "uri": "https://www.example.com/checkout?bundle=136",
     "method": "GET",
+    "query": {
+      "<param1>": "foo",
+      "<param2>": "bar"
+    },
     "ip": "1.2.3.4",
     "referer": "https://www.example.com/account",
     "useragent": "Mozilla/5.0"
