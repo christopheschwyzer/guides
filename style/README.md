@@ -1,19 +1,23 @@
-# Style
+Style
+=====
 
-## Formatting
+Formatting
+----------
 * Every file should end with an EOL
 * EOL is \n
 * Use four spaces for indentation (two for JS)
 * Prefer single over double quotes
 * Use the JetBrain IDE's codestyle templates
 
-## Naming
+Naming
+------
 * Do not use **abbreviations** (for exceptions: capitalize them like normal words. E.g. `Css`)
 * If the individual item as well as a **collection of items** is used, suffix the collection with "List". E.g. `eggList`.
 * Chose **systematic names** reading from *general* to *specific* from left to right, rather than grammatically correct names. E.g. `streamChannelMessageType` or `ratingAverage`).
 * **Methods** usually begin with a verb. E.g. `getSomething`, `setSomething`, `deleteSomethingElse`
 
-## PHP
+PHP
+---
 
 ### Exceptions
 Wrap variable output in backticks:
@@ -101,12 +105,14 @@ abstract class Some_Example {
 }
 ```
 
-## Ruby
+Ruby
+----
 In most cases use parentheses around the arguments of method invocations, but:
 - Omit parentheses for method calls with no arguments.
 - Omit parentheses around parameters for methods that are part of an internal DSL (e.g. Rake, Rails, RSpec), methods that have "keyword" status in Ruby (e.g. `attr_reader`, `puts`) and attribute access methods. Use parentheses around the arguments of all other method invocations.
 
-## HTML / CSS / JS
+HTML / CSS / JS
+---------------
 ### Coding Standards
 * Use CamelCase
 * Use "-" for related child selectors (e.g. "clipSlide" & "clipSlide-handle")
@@ -171,7 +177,8 @@ Docu styles are according to http://usejsdoc.org/.
 })(jQuery);
 ```
 
-## Translations
+Translations
+------------
 ### Heading Letter Case (for Headings, Menus, Tooltips, Buttons,...)
 First and last word, as well as all open class words capitalized:
 * Nouns
