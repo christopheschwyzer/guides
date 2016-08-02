@@ -16,6 +16,10 @@ Naming
 * Chose **systematic names** reading from *general* to *specific* from left to right, rather than grammatically correct names. E.g. `streamChannelMessageType` or `ratingAverage`).
 * **Methods** usually begin with a verb. E.g. `getSomething`, `setSomething`, `deleteSomethingElse`
 
+Units and Quantities
+--------------------
+* Prefer [SI units](https://en.wikipedia.org/wiki/International_System_of_Units) (seconds, meters, kilogram)
+
 PHP
 ---
 
