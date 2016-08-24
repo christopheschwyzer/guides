@@ -24,11 +24,9 @@ PHP
 ---
 
 ### Exceptions
-Wrap variable output in backticks:
+Do not use variables in exception messages but rather include them into `$metaInfo` array:
 ```php
-throw new CM_Exception_NotAllowed('Parameter `' . $param . '` is not allowed.');
-// or:
-throw new CM_Exception_NotAllowed("Parameter `{$param}` is not allowed.");
+throw new CM_Exception_NotAllowed('Parameter is not allowed.', null, ['parameter' => $parameter]);
 ```
 
 ### Coding standards
