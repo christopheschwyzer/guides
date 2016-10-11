@@ -12,6 +12,11 @@ Licensing
 ---------
 Open source projects are released under the MIT license, copyright Cargo Media.
 
+Versioning
+----------
+Projects are versioned using [Semantic Versioning](http://semver.org/).
+Dependencies are included with pessimistic "approximately greater than" version constraints (Composer: `~x.y.z`, Rubygems: `~> x.y.z`).
+
 Testing, CI and CD
 ------------------
 Projects have a **test suite** that covers the main functionality of the program.
