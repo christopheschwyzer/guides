@@ -121,6 +121,7 @@ HTML / CSS / JS
 * Use "data" attribute for dynamic states, modes, etc. (e.g. "[data-mode=default]")
 * use "--" to specify the corresponding state's content (e.g. "mode--default")
 * Use exclusive CSS class for JS bindings
+* Order css properties alphabetically
 
 ### Example (toggleNext jQuery Plugin)
 #### HTML
